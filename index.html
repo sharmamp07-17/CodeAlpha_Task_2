@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Colour_change</title>
+</head>
+
+<body>
+  <div class="container">
+    <!-- color button -->
+    <div class="btn">
+      <button id="colorbtn">Color_Btn</button>
+    </div>
+
+    <!-- greeting button -->
+    <div class="alert_box">
+      <button id="greeting">Greeting Msg</button>
+    </div>
+
+    <!-- calculator -->
+    <div class="calculator">
+      <div class="heading">Calculator</div>
+      <div class="textbox">
+        <input type="text" placeholder="0" id="display" readonly>
+      </div>
+      <div class="buttons">
+        <div class="row">
+          <button id="delete1">X</button>
+          <button class="button special">*</button>
+          <button class="button special">-</button>
+          <button id="clear">C</button>
+        </div>
+        <div class="row">
+          <button class="button">7</button>
+          <button class="button">8</button>
+          <button class="button">9</button>
+          <button class="button">/</button>
+        </div>
+        <div class="row">
+          <button class="button">4</button>
+          <button class="button">5</button>
+          <button class="button">6</button>
+          <button class="button special">.</button>
+        </div>
+        <div class="row">
+          <button class="button">1</button>
+          <button class="button">2</button>
+          <button class="button">3</button>
+          <button class="button">+</button>
+        </div>
+        <div class="last">
+          <button class="button">0</button>
+          <button id="result" disabled>=</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</body>
+
+<script src="script.js"></script>
+
+</html>

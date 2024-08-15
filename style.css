@@ -1,0 +1,163 @@
+:root {
+  --bg_color: gainsboro;
+  --box_shadow: red;
+  --hover_box: #000;
+  --hover_color: #ffffff;
+  --calcu_bg: #658353;
+  --heading: goldenrod;
+  --input_placeholder: #1b5342;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  background: var(--bg_color);
+  width: 100%;
+  margin: 1rem 0;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  overflow: scroll;
+}
+
+.container::-webkit-scrollbar {
+  display: none;
+}
+
+/* COLOUR BUTTON STYLING */
+
+.btn button {
+  margin: 1rem 0;
+  padding: 0.5rem 1.5rem;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  border-radius: 0.4rem;
+  font-weight: bold;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: 0.5s all;
+}
+
+.btn button:hover {
+  transform: scale(1.06);
+}
+
+/* GREETING BUTTON STYLING */
+
+.alert_box button {
+  margin: 1rem 0;
+  padding: 0.5rem 1.5rem;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  border-radius: 0.4rem;
+  font-weight: bold;
+  border: none;
+  box-shadow: 0 0 10px var(--box_shadow);
+  outline: none;
+  cursor: pointer;
+  transition: 0.5s all;
+}
+
+.alert_box button:hover {
+  background-color: var(--hover_box);
+  color: var(--hover_color);
+}
+
+/* CALCULATOR BOX STYLING */
+
+.calculator {
+  width: 80%;
+  margin: 1rem auto;
+  padding: 1rem 1rem 1.8rem;
+  background: var(--calcu_bg);
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.heading {
+  font-family: monospace;
+  font-size: 2rem;
+  font-weight: bolder;
+  text-shadow: 0 0 1rem var(--heading);
+}
+
+.textbox {
+  width: 80%;
+  margin: 1rem auto;
+  padding: 0.4rem 0.6rem;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  border-radius: 0.6rem;
+  box-shadow: 0 0 1rem var(--hover_color);
+}
+
+.textbox input {
+  width: 100%;
+  font-size: 1.8rem;
+  font-weight: bolder;
+  line-height: 1;
+  text-align: right;
+  border: none;
+  outline: none;
+  user-select: none;
+  background-color: transparent;
+}
+
+.textbox input::placeholder {
+  color: var(--input_placeholder);
+}
+
+.buttons {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.row,
+.last {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+button {
+  height: 50px;
+  width: 100%;
+  font-size: 1.5rem;
+  border: none;
+  outline: none;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  transition: 0.5s all ease-in-out;
+}
+
+button:hover {
+  background-color: var(--hover_box);
+  color: var(--hover_color);
+}
+
+.special {
+  font-size: 2.5rem;
+}
